@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './app/components/Header/Header';
+import Sneakers from './app/components/Main/Sneakers/Sneakers';
 
 function App() {
+  const [sneakers, setSneakers] = React.useState([])
+
+  const addToOrder = (item) => {
+    setSneakers(prev => [item, ...prev])
+  }
+
+
+  const handleDelete = (id) => {
+    setSneakers(prev => prev.filter(item => item.id !== id))
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header sneakers={sneakers} handleDelete={handleDelete} />
+      <Sneakers sneakers={sneakers} addToOrder={addToOrder} />
+    </>
   );
 }
 

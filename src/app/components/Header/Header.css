@@ -1,0 +1,161 @@
+.block-cart {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 5;
+}
+
+.block-cart .orders {
+  position: absolute;
+  right: 0;
+  width: 385px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.block-cart .orders .close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.block-cart-orders-container {
+  margin: 0 30px;
+}
+
+.block-cart .title {
+  margin-top: 0;
+  padding-top: 32px;
+}
+
+.block-cart .sneaker {
+  height: 120px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #F3F3F3;
+  border-radius: 20px;
+}
+
+.block-cart .sneaker:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.block-cart-orders__sneakers .name {
+  width: 150px;
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 8px;
+}
+
+.block-cart-orders__sneakers .price {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* HEADER */
+
+.header-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+}
+
+.header-description {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  margin-left: -15px;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.header-name-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9D9D9D;
+  margin-top: 0;
+}
+
+.header-sections {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.header-basket {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.header-basket img {
+  cursor: pointer;
+}
+
+/* HEADER BACKGROUND */
+
+.header-background {
+  margin-top: 39px;
+  background: url('../../assets/header/background.png') no-repeat;
+  background-position-x: right;
+  margin-top: 45px;
+  padding: 16px 0 52px 0;
+  background-color: #F4EFE9;
+  border-radius: 20px;
+}
+
+.background-logo {
+  margin-left: 20px;
+  margin-bottom: 32px;
+}
+
+.header-background-text {
+  margin-left: 60px;
+}
+
+.header-background-heading {
+  margin-top: 0;
+  width: 240.55px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #000000;
+}
+
+.header-title-text {
+  color: #8BB43C;
+}
+
+.header-background-btn {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #A5D364;
+  border-radius: 110px;
+  padding: 14px 60px;
+}
